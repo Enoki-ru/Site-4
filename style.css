@@ -1,0 +1,45 @@
+:root{
+    --size-h1: 3rem;
+    --size-text: 1.5rem;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+p{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: var(--size-text);
+    margin: 10px 5% ;
+}
+h1{
+    padding: 10% 10%;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: 400;
+    font-size: var(--size-h1);
+    color: #fff;
+}
+header{
+    margin-top: 0;
+    height: 85vh;
+    background-image: url(img/backs/1.jpg);
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.container .icnn{
+    margin: 40px 0;
+}
+.element-animation {
+    
+    /* Скроем элемент в начальном состоянии */
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  .element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+  }
